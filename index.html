@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Certificados</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/baixados.png">
 </head>
 <body>
     <main>
@@ -18,9 +19,28 @@
                 </ul>
             </nav>
         </section>
-        <section id="estatisticas">
-            <h2>Painel de Estatisticas</h2>
-            
+        <section id="estatisticas" aria-labelledby="titulo-estatisticas">
+            <h2 id="titulo-estatisticas">Painel de Estatísticas</h2>
+            <div id="container">
+                <article class="board">
+                    <div class="contagem" role="status" aria-live="polite">
+                        0
+                    </div>
+                    <p>Certificados Presenciais</p>
+                </article>
+                <article class="board">
+                    <div class="contagem" role="status" aria-live="polite">
+                        0
+                    </div>
+                    <p>Em Andamento</p>
+                </article>
+                <article class="board">
+                    <div class="contagem" role="status" aria-live="polite">
+                        0
+                    </div>
+                    <p>Certificados Online</p>
+                </article>
+            </div>
         </section>
     </main>
 </body>

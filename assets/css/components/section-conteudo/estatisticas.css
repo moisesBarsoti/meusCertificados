@@ -1,0 +1,100 @@
+/* Estatísticas - Estilos Base */
+#estatisticas {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#estatisticas h2 {
+    font-family: var(--font-family);
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  /* Container dos Cards */
+  #container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  /* Cards Individuais */
+  .board {
+    background: var(--background-card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px var(--color-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .board:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px var(--color-shadow);
+  }
+  
+  /* Contagem/Números */
+  .contagem {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .board:hover .contagem {
+    color: var(--color-primary-hover);
+  }
+  
+  /* Texto descritivo */
+  .board p {
+    color: var(--color-text);
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  
+  /* Animações */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .contagem.updated {
+    animation: pulse 0.5s ease;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    #container {
+      grid-template-columns: 1fr;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    #estatisticas h2 {
+      font-size: 1.5rem;
+    }
+    
+    .contagem {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .board {
+      padding: 1rem;
+    }
+    
+    .contagem {
+      font-size: 1.8rem;
+    }
+    
+    .board p {
+      font-size: 1rem;
+    }
+  }

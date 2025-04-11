@@ -2,6 +2,7 @@
 @import url("./components/padrao.css");
 @import url("./components/colors.css");
 @import url("./components/section-conteudo/conteudo.css");
+@import url("./components/section-conteudo/estatisticas.css");
 
 body {
     background-color: var(--background);
@@ -10,4 +11,8 @@ body {
 
 main {
     padding: 5rem 5rem;
+}
+
+section {
+    height: 40vh;
 }

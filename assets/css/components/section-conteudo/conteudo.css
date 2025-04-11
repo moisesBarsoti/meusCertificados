@@ -2,30 +2,57 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
+    padding: 2rem 5%;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 section h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem); 
+    line-height: 1.2;
+    text-align: center;
 }
 
 section p {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem); 
     color: var(--color-grey);
+    text-align: center;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+/* Navegação Responsiva */
 section nav ul {
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     margin-top: 1.3rem;
+    padding: 0;
+    list-style: none;
+}
+
+section nav ul li {
+    flex: 1 1 auto;
+    min-width: 120px;
+    max-width: 200px;
 }
 
 section nav ul li a {
-    display: inline-block;
-    padding: 1rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
     border-radius: 10px;
     color: var(--color-white);
     border: solid 1px var(--border-cian);
-    transition: .5s;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 section nav ul li a.ativo {
@@ -33,5 +60,69 @@ section nav ul li a.ativo {
 }
 
 section nav ul li a:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+/* Breakpoints Específicos */
+@media (max-width: 1024px) {
+    section {
+        padding: 2rem 3%;
+    }
+    
+    section nav ul {
+        gap: 0.8rem;
+    }
+    
+    section nav ul li a {
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        gap: 1rem;
+        padding: 1.5rem 2%;
+    }
+    
+    section nav ul {
+        margin-top: 1rem;
+    }
+    
+    section nav ul li {
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 1rem 5%;
+        gap: 0.8rem;
+    }
+    
+    section h1 {
+        font-size: 1.8rem;
+    }
+    
+    section p {
+        font-size: 1rem;
+    }
+    
+    section nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+    
+    section nav ul li {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    section nav ul li a {
+        padding: 0.8rem;
+    }
+    
+    section nav ul li a:hover {
+        transform: none;
+    }
 }

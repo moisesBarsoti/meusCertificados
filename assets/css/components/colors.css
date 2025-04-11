@@ -1,15 +1,21 @@
 :root {
     /* Background */
     --background: #232428;
+    --background-card: #fff;
     
     /* Colors */
     --color-white: #fff;
     --color-grey: #ccc;
     --color-cian: rgba(0, 255, 255, 0.338);
+    --color-primary: #3498db;
+    --color-primary-hover: #2980b9;
+    --color-title: #2c3e50;
+    --color-text: #7f8c8d;
+    --color-shadow: rgba(0, 0, 0, 0.1);
     
     /* Components */
     --border-cian: #0ff;
     
     /* Fonts */
-
+    --font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 }
