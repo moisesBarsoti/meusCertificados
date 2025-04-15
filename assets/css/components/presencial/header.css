@@ -1,0 +1,12 @@
+header a {
+    padding: 1rem 2rem;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+
+header a:hover {
+    background-color: var(--color-shadow);
+    color: var(--color-white);
+}

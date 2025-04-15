@@ -1,0 +1,12 @@
+main section article .cursos_board {
+    width: 40%;
+    border: solid 1px #fff;
+}
+
+main section article .cursos_board img {
+    width: 100%;
+}
+
+main section article .cursos_board p {
+    width: 30ch;
+}
