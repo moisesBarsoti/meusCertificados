@@ -1,12 +1,60 @@
+main section article {
+    display: flex;
+    justify-content: center;
+}
+
 main section article .cursos_board {
-    width: 40%;
-    border: solid 1px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 300px;
+    min-height: 410px;
+    border: 2px solid var(--border-purple);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px var(--color-shadow);
+    font-family: var(--font-family);
+}
+
+main section article .cursos_board:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: var(--color-purple);
 }
 
 main section article .cursos_board img {
-    width: 100%;
+    width: 70%;
+    max-width: 200px;
+    margin-bottom: 20px;
 }
 
-main section article .cursos_board p {
-    width: 30ch;
+main section article .cursos_board ul li span {
+    width: 100%;
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+main section article .cursos_board a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+main section article .cursos_board a:hover {
+    background-color: transparent;
+    border-color: var(--color-purple);
+    color: var(--color-purple);
 }

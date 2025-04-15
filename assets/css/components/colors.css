@@ -7,15 +7,16 @@
     --color-white: #fff;
     --color-grey: #ccc;
     --color-black: #000;
-    --color-cian: rgba(0, 255, 255, 0.338);
-    --color-primary: #3498db;
-    --color-primary-hover: #2980b9;
+    --color-cian: #4a90e2;
+    --color-cian-hover: #4a90e2;
+    --color-purple: #6a3093;
     --color-title: #2c3e50;
     --color-text: #7f8c8d;
     --color-shadow: rgba(0, 0, 0, 0.1);
     
     /* Components */
-    --border-cian: #0ff;
+    --border-cian: #4a90e2;
+    --border-purple: #6a3093;
     
     /* Fonts */
     --font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;

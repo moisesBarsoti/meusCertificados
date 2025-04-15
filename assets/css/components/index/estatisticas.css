@@ -1,0 +1,99 @@
+/* Estatísticas - Estilos Base */
+#estatisticas {
+  padding: .5rem .5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#estatisticas h2 {
+  font-family: var(--font-family);
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Container dos Cards */
+#container {
+  display: grid;
+  align-items: stretch; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Cards Individuais */
+.board {
+  background: var(--background-card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px var(--color-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  min-height: 200px; 
+}
+
+.board:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px var(--color-shadow);
+}
+
+/* Contagem/Números - Corrigido */
+.contagem {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-cian);
+  margin: 1rem 0; 
+  line-height: 1; 
+  flex-grow: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Texto descritivo - Corrigido */
+.board p {
+  color: var(--color-text);
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0 0.5rem; /* Padding lateral para textos longos */
+  flex-shrink: 0; /* Impede que o texto diminua */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #container {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  
+  #estatisticas h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contagem {
+    font-size: 2rem;
+  }
+  
+  .board {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .board {
+    padding: 1rem;
+    min-height: 160px;
+  }
+  
+  .contagem {
+    font-size: 1.8rem;
+  }
+  
+  .board p {
+    font-size: 1rem;
+  }
+}
