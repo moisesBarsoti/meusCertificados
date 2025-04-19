@@ -1,12 +1,27 @@
-header a {
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+header nav ul li a {
+    font-size: 1.3rem;
+    transition: all 0.3s ease-in-out;
     padding: 1rem 2rem;
+}
+
+header nav ul li a {
+    color: var(--color-white);
+}
+
+header nav ul li a#voltar {
     background-color: var(--color-white);
     color: var(--color-black);
     border-radius: 10px;
-    transition: .5s ease-in-out;
 }
 
-header a:hover {
-    background-color: var(--color-shadow);
-    color: var(--color-white);
+header nav ul li a:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-radius: 10px;
 }
