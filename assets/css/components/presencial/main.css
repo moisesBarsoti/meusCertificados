@@ -1,0 +1,60 @@
+main#presencial {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem ;
+}
+
+main#presencial h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+main#presencial section#cards__section .card__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+main#presencial section#cards__section .card__container .card__content ul li {
+    margin-top: .7rem;
+}
+
+main#presencial section#cards__section .card__container .card__content ul li p { 
+    font-size: 1.3rem;
+    text-align: start;
+}
+
+main#presencial section#cards__section .card__container .card__content .certificado {
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    border: solid 2px var(--color-purple);
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+main#presencial section#cards__section .card__container .card__content #andamento {
+    border: solid 2px red;
+}
+
+main#presencial section#cards__section .card__container .card__content .certificado:hover {
+    transform: scale(1.1);
+}
+
+main#presencial section#cards__section .card__container .card__content .certificado a {
+    color: var(--color-purple);
+}
+
+main#presencial section#cards__section .card__container .card__content #andamento a {
+    color: red;
+}
+
+main#presencial section#cards__section .card__container .card__image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
