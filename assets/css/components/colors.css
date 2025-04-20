@@ -1,7 +1,7 @@
 :root {
     /* Background */
     --background: #232428;
-    --background-card: #fff;
+    --background-card: #434343;
     
     /* Colors */
     --color-white: #fff;
@@ -11,7 +11,7 @@
     --color-cian-hover: #4a90e2;
     --color-purple: #6a3093;
     --color-title: #2c3e50;
-    --color-text: #7f8c8d;
+    --color-text: #4a90e2;
     --color-shadow: rgba(0, 0, 0, 0.1);
     
     /* Components */
