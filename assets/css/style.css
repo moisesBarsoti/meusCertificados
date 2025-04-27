@@ -1,9 +1,10 @@
+/* Global */
+@import url("./global/colors.css");
+@import url("./global/padrao.css");
+
 /* Index */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url("./components/padrao.css");
-@import url("./components/colors.css");
-@import url("./components/index/conteudo.css");
-@import url("./components/index/estatisticas.css");
+@import url("./pages/index/conteudo.css");
+@import url("./pages/index/estatisticas.css");
 
 /* Presencial */
 @import url("../css/components/presencial/header.css");
